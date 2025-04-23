@@ -14,12 +14,20 @@ logging.basicConfig(
 def index():
     return render_template('index.html')
 
-# Маршрут для обработки данных формы
 @app.route('/api/numbers', methods=['POST'])
 def process_numbers():
-    # Здесь можно добавить обработку полученных чисел
-    # Для примера просто возвращаем их обратно
-    return {'status': 'success', 'data': 'Числа успешно обработаны'}
+    data = request.get_json()
+    try:
+        area = float(data.get('number1', 0))
+        price_per_m2 = 300000
+        total_price = area * price_per_m2
+
+        return jsonify({
+            'status': 'success',
+            'price': round(total_price, 2)
+        })
+    except Exception as e:
+        return jsonify({'status': 'error', 'message': str(e)}), 400
 
 if __name__ == '__main__':
     app.run(debug=True)

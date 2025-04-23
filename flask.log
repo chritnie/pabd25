@@ -1,6 +1,0 @@
-2025-04-23 20:59:12,115 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on http://127.0.0.1:5000 [in /Users/chritnie/Downloads/pabd25-main/venv/lib/python3.13/site-packages/werkzeug/_internal.py:97]
-2025-04-23 20:59:12,115 INFO: [33mPress CTRL+C to quit[0m [in /Users/chritnie/Downloads/pabd25-main/venv/lib/python3.13/site-packages/werkzeug/_internal.py:97]
-2025-04-23 20:59:12,116 INFO:  * Restarting with stat [in /Users/chritnie/Downloads/pabd25-main/venv/lib/python3.13/site-packages/werkzeug/_internal.py:97]
-2025-04-23 20:59:12,410 WARNING:  * Debugger is active! [in /Users/chritnie/Downloads/pabd25-main/venv/lib/python3.13/site-packages/werkzeug/_internal.py:97]
-2025-04-23 20:59:12,419 INFO:  * Debugger PIN: 127-788-017 [in /Users/chritnie/Downloads/pabd25-main/venv/lib/python3.13/site-packages/werkzeug/_internal.py:97]

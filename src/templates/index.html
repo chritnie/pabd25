@@ -40,7 +40,7 @@
 </head>
 <body>
     <div class="form-container">
-        <h2>Введите четыре числа</h2>
+        <h2>Укажите параметры недвижимости</h2>
         <form id="numberForm">
             <input type="number" id="num1" placeholder="Площадь квартиры, м2" required>
             <input type="number" id="num2" placeholder="Количество комнат" required>
@@ -96,12 +96,17 @@
             })
             .then(response => response.json())
             .then(data => {
-                document.getElementById('response').innerText = 'Ответ сервера: ' + JSON.stringify(data);
-            })
-            .catch(error => {
-                console.error('Ошибка:', error);
-                document.getElementById('response').innerText = 'Произошла ошибка при отправке данных';
-            });
+    if (data.status === 'success') {
+        document.getElementById('response').innerText =
+            '💰 Расчётная стоимость квартиры: ' + data.price.toLocaleString('ru-RU') + ' ₽';
+    } else {
+        document.getElementById('response').innerText = '⚠️ Ошибка анализа. Повторите попытку.';
+    }
+})
+        .catch(error => {
+            console.error('Ошибка:', error);
+            document.getElementById('response').innerText = '❌ Не удалось отправить данные. Проверьте соединение.';
+        });
         }
     </script>    
 </body>
