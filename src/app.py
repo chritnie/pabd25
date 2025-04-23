@@ -1,6 +1,13 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request, jsonify
+import logging
 
 app = Flask(__name__)
+
+logging.basicConfig(
+    filename='flask.log',
+    level=logging.DEBUG,
+    format='%(asctime)s %(levelname)s: %(message)s [in %(pathname)s:%(lineno)d]'
+)
 
 # Маршрут для отображения формы
 @app.route('/')
