@@ -18,11 +18,11 @@ def main():
     csv_path = f'data/raw/{n_rooms}_{t}.csv'
     data = moscow_parser.get_flats(
         deal_type="sale",
-        rooms=(n_rooms,),
+        rooms=(1, 2, 3),
         with_saving_csv=False,
         additional_settings={
             "start_page": 1,
-            "end_page": 2,
+            "end_page": 10,
             "object_type": "secondary"
         })
     df = pd.DataFrame(data)

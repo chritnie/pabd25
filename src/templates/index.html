@@ -98,9 +98,10 @@
             .then(data => {
     if (data.status === 'success') {
         document.getElementById('response').innerText =
-            '💰 Расчётная стоимость квартиры: ' + data.price.toLocaleString('ru-RU') + ' ₽';
+            '💰 Прогнозируемая цена: ' + data.price.toLocaleString('ru-RU') + ' ₽';
     } else {
-        document.getElementById('response').innerText = '⚠️ Ошибка анализа. Повторите попытку.';
+        document.getElementById('response').innerText =
+            '⚠️ Ошибка: ' + (data.message || 'не удалось предсказать цену');
     }
 })
         .catch(error => {
