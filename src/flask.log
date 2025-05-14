@@ -61,3 +61,9 @@
 2025-04-30 21:23:38,217 INFO: 127.0.0.1 - - [30/Apr/2025 21:23:38] "POST /api/numbers HTTP/1.1" 200 - [in /Users/chritnie/Downloads/pabd25-main/venv/lib/python3.13/site-packages/werkzeug/_internal.py:97]
 2025-04-30 21:23:38,813 INFO: 127.0.0.1 - - [30/Apr/2025 21:23:38] "POST /api/numbers HTTP/1.1" 200 - [in /Users/chritnie/Downloads/pabd25-main/venv/lib/python3.13/site-packages/werkzeug/_internal.py:97]
 2025-04-30 21:23:42,430 INFO: 127.0.0.1 - - [30/Apr/2025 21:23:42] "POST /api/numbers HTTP/1.1" 200 - [in /Users/chritnie/Downloads/pabd25-main/venv/lib/python3.13/site-packages/werkzeug/_internal.py:97]
+2025-04-30 21:42:43,606 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000 [in /Users/chritnie/Downloads/pabd25-main/venv/lib/python3.13/site-packages/werkzeug/_internal.py:97]
+2025-04-30 21:42:43,606 INFO: [33mPress CTRL+C to quit[0m [in /Users/chritnie/Downloads/pabd25-main/venv/lib/python3.13/site-packages/werkzeug/_internal.py:97]
+2025-04-30 21:42:45,355 INFO: 127.0.0.1 - - [30/Apr/2025 21:42:45] "GET / HTTP/1.1" 200 - [in /Users/chritnie/Downloads/pabd25-main/venv/lib/python3.13/site-packages/werkzeug/_internal.py:97]
+2025-04-30 21:42:46,076 INFO: 127.0.0.1 - - [30/Apr/2025 21:42:46] "[33mGET /favicon.ico HTTP/1.1[0m" 404 - [in /Users/chritnie/Downloads/pabd25-main/venv/lib/python3.13/site-packages/werkzeug/_internal.py:97]
+2025-04-30 21:42:53,152 INFO: 127.0.0.1 - - [30/Apr/2025 21:42:53] "POST /api/numbers HTTP/1.1" 200 - [in /Users/chritnie/Downloads/pabd25-main/venv/lib/python3.13/site-packages/werkzeug/_internal.py:97]
