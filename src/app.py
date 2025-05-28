@@ -4,10 +4,10 @@ import joblib
 import numpy as np
 
 # Загрузка моделей
-model_1room = joblib.load("../notebooks/models/gb_1room.pkl")
-model_2room = joblib.load("../notebooks/models/gb_2room.pkl")
-model_3room = joblib.load("../notebooks/models/gb_3room.pkl")
-model_4room = joblib.load("../notebooks/models/gb_4room.pkl")
+model_1room = joblib.load("../notebooks/models/xgboost_model_1room_v1.pkl")
+model_2room = joblib.load("../notebooks/models/xgboost_model_2room_v1.pkl")
+model_3room = joblib.load("../notebooks/models/xgboost_model_3room_v1.pkl")
+model_4room = joblib.load("../notebooks/models/xgboost_model_4room_v1.pkl")
 
 app = Flask(__name__)
 
@@ -47,7 +47,7 @@ def process_numbers():
             return jsonify({'status': 'error', 'message': 'Невозможное количество комнат.'}), 400
 
         # Предсказание
-        predicted_price = model.predict(input_data)[0]
+        predicted_price = float(model.predict(input_data)[0])
 
         return jsonify({
             'status': 'success',

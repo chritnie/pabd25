@@ -1,6 +1,6 @@
 stages:
   parse_data:
-    cmd: python src/parse_cian.py
+    cmd: python src/parse_cian.py --n_rooms 1
     deps:
     - src/parse_cian.py
     outs:
